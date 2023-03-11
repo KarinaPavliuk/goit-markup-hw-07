@@ -1,0 +1,22 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+  .mob-menu-tel {
+    font-size: 36px;
+  }
+  .mob-menu-soc-list {
+    gap: 56px;
+  }
+  .modal {
+    width: 392px;
+    min-height: 586px;
+  }
+  .check-text::before {
+    width: 16px;
+    height: 16px;
+  }
+  .footer-email {
+    width: 398px;
+  }
+}

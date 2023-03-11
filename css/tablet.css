@@ -1,0 +1,202 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 798px;
+  }
+
+  .header-container {
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--brand-color-dark);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-link:is(:hover, :focus) {
+    color: var(--brand-color-pressed-state);
+  }
+
+  .header-link::after {
+    position: absolute;
+    display: flex;
+    content: ' ';
+    height: 4px;
+    width: 0;
+    margin-top: 24px;
+    border-radius: 2px;
+    background-color: var(--brand-color-pressed-state);
+    transition: 0.3s;
+  }
+
+  .header-link:hover::after {
+    width: 100%;
+  }
+
+  .current {
+    color: var(--brand-color-pressed-state);
+  }
+
+  .current::after {
+    position: absolute;
+    display: flex;
+    content: ' ';
+    height: 4px;
+    width: 100%;
+    margin-top: 24px;
+    border-radius: 2px;
+    background-color: var(--brand-color-pressed-state);
+    transition: 0.3s;
+  }
+
+  .header-address-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    row-gap: 12px;
+  }
+
+  .header-mail,
+  .header-tel {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-text);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-mail:is(:hover, :focus),
+  .header-tel:is(:hover, :focus) {
+    color: var(--brand-color-pressed-state);
+  }
+
+  .menu-open {
+    display: none;
+  }
+
+  .subheader {
+    padding-bottom: 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subheader {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tab-2x.jpg);
+    }
+  }
+
+  .subheader-heading {
+    max-width: 496px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+  }
+  .features-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .features-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .features-list-heading {
+    text-align: start;
+  }
+  .features-list-descr {
+    max-width: 356px;
+  }
+  .team > .container {
+    max-width: 582px;
+  }
+  .team {
+    padding-bottom: 104px;
+  }
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .team-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .customers > .container {
+    max-width: 582px;
+  }
+  .customers-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .portfolio-navigation {
+    margin-bottom: 64px;
+    justify-content: center;
+  }
+  .portfolio-btn {
+    padding: 12px 24px;
+  }
+  .portfolio-content-list {
+    row-gap: 72px;
+    justify-content: flex-start;
+  }
+  .portfolio-content-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .modal-btn-send {
+    padding: 16px 64px;
+  }
+  .check-text {
+    font-size: 12px;
+  }
+  .check-text-link {
+    font-size: 12px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+    max-width: 582px;
+  }
+  .footer-left-content {
+    align-items: flex-start;
+  }
+  .footer-soc {
+    align-items: flex-start;
+  }
+  .footer-subscribe-heading {
+    text-align: start;
+  }
+  .footer-email {
+    width: 264px;
+  }
+  .footer-email-form {
+    flex-direction: row;
+  }
+}

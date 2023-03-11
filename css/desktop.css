@@ -1,0 +1,108 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .header-address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .header-mail,
+  .header-tel {
+    font-size: 16px;
+  }
+
+  .subheader {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subheader {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
+  }
+
+  .subheader-heading {
+    margin-bottom: 48px;
+  }
+  .features {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .features-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .features-icon-background {
+    height: 112px;
+    margin-bottom: 8px;
+    background: var(--brand-color-light);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .features-list-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .features-list-descr {
+    font-weight: 400;
+    max-width: 264px;
+  }
+
+  .doing {
+    display: block;
+  }
+
+  .team > .container {
+    max-width: 1200px;
+  }
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers > .container {
+    max-width: 1200px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+
+  .footer-container {
+    gap: 80px;
+  }
+  .footer-left-content {
+    margin-right: 40px;
+  }
+
+  .portfolio-navigation {
+    margin-bottom: 72px;
+  }
+  .portfolio-content-list {
+    row-gap: 48px;
+  }
+  .portfolio-content-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+}
